@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class LoggingAspect {
 	
-	@Before("exceution of aspect before method exceution")
+	@Before("execution(* com.aop.*.*(..))")
 	public void logBeforeMethod() {
 		System.out.println("Method exceution started");
 	}
